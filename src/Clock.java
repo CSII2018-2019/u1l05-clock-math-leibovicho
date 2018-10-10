@@ -30,13 +30,11 @@ public class Clock {
 		minutesFinal = minuteInput%60;
 		
 		hours += hoursFinal;
-		minutes += minutesFinal;
-		
-		System.out.println(hours%12); 
-		
+		minutes += minutesFinal; 
+  
 		if (minutes >= 60) {
 			minutes %= 60;
-			//hours += minutes/60;
+
 			hours = ((hours%12) + 1) + minutes/60;
 		}
 		if (hours > 12) {
@@ -47,7 +45,7 @@ public class Clock {
 		JOptionPane.showMessageDialog(null, "The end time is \n" + hours + ":" + minutes);
 		
 		
-		
+		    
 		
 		
 	}
